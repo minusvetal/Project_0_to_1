@@ -173,6 +173,17 @@
       <path d="M116.052 604.374l2.914 3.046a.982.982 0 010 1.345.882.882 0 01-1.287 0l-2.914-3.046-2.914 3.046a.881.881 0 01-1.286 0 .982.982 0 010-1.345l2.914-3.046-2.914-3.046a.982.982 0 010-1.345.882.882 0 011.286 0l2.914 3.046 2.914-3.046a.882.882 0 011.287 0 .982.982 0 010 1.345z" fill="#fe3e57"></path>
     </g>
   </symbol>
+  <!-- popup -->
+
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130" id="play_btn">
+    <g transform="translate(-.021)">
+      <circle cx="65" cy="65" r="65" transform="translate(.021)" fill="#fe3e57" opacity=".2"></circle>
+      <circle cx="55" cy="55" r="55" transform="translate(10.021 10)" fill="#fe3e57" opacity=".6"></circle>
+      <circle cx="45" cy="45" r="45" transform="translate(20.021 20)" fill="#fe3e57"></circle>
+      <path d="M71.481 63.142l-11.824-7.6a3 3 0 00-1.553-.537c-.884 0-1.431.667-1.431 1.782v16.437c0 1.115.546 1.78 1.428 1.78a2.98 2.98 0 001.547-.538l11.829-7.605a2.051 2.051 0 000-3.714" fill="#fff"></path>
+    </g>
+  </symbol>
+
 
 
 
