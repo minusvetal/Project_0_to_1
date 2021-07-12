@@ -52,7 +52,7 @@ function images() {
 		.pipe(
 			imagemin([
 				imagemin.gifsicle({ interlaced: true }),
-				imagemin.mozjpeg({ quality: 75, progressive: true }),
+				// imagemin.mozjpeg({ quality: 75, progressive: true }),
 				imagemin.optipng({ optimizationLevel: 5 }),
 				imagemin.svgo({
 					plugins: [{ removeViewBox: true }, { cleanupIDs: false }],
@@ -85,9 +85,9 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.browsersync = browsersync;
 exports.watching = watching;
-exports.images = images;
+// exports.images = images;
 exports.cleanDist = cleanDist;
 
-exports.build = series(cleanDist, images, build);
+exports.build = series(cleanDist, build);
 
 exports.default = parallel(styles, scripts, browsersync, watching);
