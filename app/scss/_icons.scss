@@ -1,0 +1,20 @@
+.icon {
+	fill: $default;
+	width: 20px;
+	height: 20px;
+	&-visa {
+		width: 28px;
+		height: 20px;
+	}
+	&:hover {
+		fill: $accent;
+	}
+	&-master {
+		width: 28px;
+		height: 20px;
+	}
+	&-paypal {
+		width: 75px;
+		height: 20px;
+	}
+}

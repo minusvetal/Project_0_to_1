@@ -1,0 +1,52 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	color: $default;
+	font-size: 16px;
+	line-height: 26px;
+	@extend %quicksand-500;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex-grow: 1;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+a {
+	color: $default;
+	font-size: 16px;
+	line-height: 26px;
+	@extend %quicksand-500;
+}
+
+.btn {
+	border: none;
+	background-color: $accent;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 14px 25px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 20px 0px rgba(255, 17, 48, 0.3);
+}
+
+.title {
+	font-size: 48px;
+	line-height: 65px;
+	color: $title;
+	@extend %roboto-700;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.text {
+	text-align: center;
+	max-width: 570px;
+	margin: 0 auto 55px;
+}
