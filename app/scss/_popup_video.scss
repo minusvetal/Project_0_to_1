@@ -10,6 +10,7 @@
 	&__inner {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 	}
 
 	// __popup
@@ -25,11 +26,6 @@
 		background-position: center center;
 	}
 
-	// .video-fashon__play
-
-	&__play {
-	}
-
 	// .video-fashon__content
 
 	&__content {
@@ -39,22 +35,27 @@
 	// .video-fashon__subtitle
 
 	&__subtitle {
+		@extend %quicksand-500;
+		color: $accent;
+		font-size: 22px;
+		text-transform: uppercase;
 	}
 
 	// .video-fashon__title
 
 	&__title {
+		text-align: left;
+		margin-bottom: 23px;
 	}
 
 	// .video-fashon__text
 
 	&__text {
+		line-height: 26px;
+		margin-bottom: 43px;
 	}
 
 	// .video-fashon__link
-
-	&__link {
-	}
 }
 
 .icon-playvideo {
