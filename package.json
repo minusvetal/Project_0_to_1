@@ -9,7 +9,6 @@
 	"author": "vlados",
 	"license": "ISC",
 	"devDependencies": {
-		"@fancyapps/ui": "^4.0.0-alpha.4",
 		"browser-sync": "^2.27.4",
 		"del": "^6.0.0",
 		"gulp": "^4.0.2",
@@ -22,8 +21,11 @@
 		"imagemin-mozjpeg": "^9.0.0",
 		"imagemin-optipng": "^5.2.1",
 		"imagemin-svgo": "^5.2.4",
+		"install": "^0.13.0",
 		"jquery": "^3.6.0",
-		"sass": "^1.35.1",
+		"npm": "^7.19.1",
+		"rateyo": "^2.3.2",
+		"sass": "^1.35.2",
 		"slick-carousel": "^1.8.1"
 	}
 }
