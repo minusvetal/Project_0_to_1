@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+  <g id="play_btn" data-name="play btn" transform="translate(-0.021)">
+    <circle id="Ellipse_7_copy_2" data-name="Ellipse 7 copy 2" cx="65" cy="65" r="65" transform="translate(0.021)" fill="#fe3e57" opacity="0.2"/>
+    <circle id="Ellipse_7_copy" data-name="Ellipse 7 copy" cx="55" cy="55" r="55" transform="translate(10.021 10)" fill="#fe3e57" opacity="0.6"/>
+    <circle id="Ellipse_7" data-name="Ellipse 7" cx="45" cy="45" r="45" transform="translate(20.021 20)" fill="#fe3e57"/>
+    <path id="Shape_23" data-name="Shape 23" d="M649.816,2630.142l-11.824-7.6a3,3,0,0,0-1.553-.537c-.884,0-1.431.667-1.431,1.782v16.437c0,1.115.546,1.78,1.428,1.78a2.98,2.98,0,0,0,1.547-.538l11.829-7.605a2.051,2.051,0,0,0,0-3.714" transform="translate(-578.335 -2567)" fill="#fff"/>
+  </g>
+</svg>
