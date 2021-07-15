@@ -50,3 +50,49 @@ a {
 	max-width: 570px;
 	margin: 0 auto 55px;
 }
+
+.bredcrumbs {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding-left: 25px;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 20px;
+		height: 20px;
+		background: url(../images/top/home_icon.svg) center center / cover no-repeat;
+	}
+	&__item {
+		color: #727272;
+		padding-right: 40px;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 7px;
+			right: 15px;
+			width: 9px;
+			height: 10px;
+			background: url(../images/top/angle_right.svg);
+		}
+		&:last-child {
+			color: $accent;
+			padding-right: 0;
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	&__list {
+		display: flex;
+	}
+	&__link {
+		color: inherit;
+		padding: 2px 0;
+	}
+}
