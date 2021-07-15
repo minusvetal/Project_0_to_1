@@ -77,7 +77,7 @@
         <section class="top">
             <div class="top-container" style="background-image: url(../images/top/top_bg.png);">
                 <div class="container">
-                    <h2 class="top__title">log in</h2>
+                    <h2 class="top__title">SHOP PAGE</h2>
                     <div class="bredcrumbs">
                         <ul class="bredcrumbs__list">
                             <li class="bredcrumbs__item">
@@ -87,7 +87,7 @@
                             </li>
                             <li class="bredcrumbs__item">
                                 <a class="bredcrumbs__link" href="#">
-                                    Log in
+                                    Shop page
                                 </a>
                             </li>
                         </ul>
@@ -97,6 +97,54 @@
 
             </div>
         </section>
+
+        <section class="shop">
+            <div class="container">
+                <div class="shop__inner">
+
+                    <div class="shop__filters filter">
+
+                        <div class="filter-search filter__item">
+                            <h3 class="filter-search__title filter__title">Search</h3>
+                            <form class="filter-search__form" action="#">
+                                <input class="filter-search__input" type="text" placeholder="Search your keyword....">
+                                <button class="filter-search__btn" type="submit">
+                                    <svg class="filter__icon-search">
+                                        <use href="images/icons/icons.svg#search"></use>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                        <!-- /.filter__search -->
+
+                        <div class="filter__item filter-price">
+                            <h3 class="filter-search__title filter__title">Price Filter</h3>
+                            <form class="filter-price" action="#">
+                                <input class="filter-price__input" type="text" data-min="0" data-max="999"
+                                    data-from="200" data-to="800">
+                                <div class="filter-price__label">
+                                    <span>Price: $0 - $999:</span>
+                                    <button class="filter-price__btn" type="submit">Filter</button>
+                                </div>
+                            </form>
+                            <!-- RangeSlider -->
+                        </div>
+
+                    </div>
+
+                    <!-- /.shop__filters -->
+
+
+                    <div class="shop__content">
+
+
+                    </div>
+
+                    <!-- /.shop__content -->
+                </div>
+            </div>
+        </section>
+        <!-- /.shop -->
 
     </main>
     <!-- /.main -->

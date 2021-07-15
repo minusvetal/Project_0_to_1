@@ -1,4 +1,11 @@
 $(function () {
+	// подлючаем рейндж слайдер
+	$(".filter-price__input").ionRangeSlider({
+		type="double",
+		prefix: "$",
+		});
+
+	//  slik-slider
 	$(".top-slider__inner").slick({
 		dots: true,
 		arrows: false,
