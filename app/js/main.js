@@ -35,11 +35,11 @@ $(function () {
 	}
 
 	function initializeClock(id, endtime) {
-		const clock = document.querySelector(".promo__clock");
-		const daysSpan = clock.querySelector(".promo__days");
-		const hoursSpan = clock.querySelector(".promo__hours");
-		const minutesSpan = clock.querySelector(".promo__minutes");
-		const secondsSpan = clock.querySelector(".promo__seconds");
+		// const clock = document.querySelector(".promo__clock");
+		const daysSpan = document.querySelector(".promo__days");
+		const hoursSpan = document.querySelector(".promo__hours");
+		const minutesSpan = document.querySelector(".promo__minutes");
+		const secondsSpan = document.querySelector(".promo__seconds");
 
 		function updateClock() {
 			const t = getTimeRemaining(endtime);
@@ -57,7 +57,6 @@ $(function () {
 		updateClock();
 		const timeinterval = setInterval(updateClock, 1000);
 	}
-
 	const deadline = $(".promo__clock").attr("data-time");
 	initializeClock(".promo__clock", deadline);
 

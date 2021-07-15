@@ -8,6 +8,10 @@
 		align-items: center;
 	}
 
+	&__item {
+		max-width: 570px;
+	}
+
 	// .page-404__title
 
 	&__title {
@@ -16,13 +20,14 @@
 		line-height: 26px;
 		font-weight: 700;
 		color: #28384f;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 	}
 
 	// .page-404__text
 
 	&__text {
 		max-width: 460px;
+		width: 100%;
 		color: $default;
 		margin-bottom: 60px;
 	}
