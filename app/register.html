@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин - LogIn</title>
+    <title>Магазин - регистрация</title>
 
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -78,7 +78,7 @@
         <section class="top">
             <div class="top-container" style="background-image: url(../images/top/top_bg.png);">
                 <div class="container">
-                    <h2 class="top__title">log in</h2>
+                    <h2 class="top__title">REGISTER</h2>
                     <div class="bredcrumbs">
                         <ul class="bredcrumbs__list">
                             <li class="bredcrumbs__item">
@@ -88,7 +88,7 @@
                             </li>
                             <li class="bredcrumbs__item">
                                 <a class="bredcrumbs__link" href="#">
-                                    Log in
+                                    Register
                                 </a>
                             </li>
                         </ul>
@@ -102,28 +102,36 @@
         <section class="modal">
             <div class="container">
                 <div class="modal__links">
-                    <a class="modal__link" href="register.html">
+                    <a class="modal__link modal__link--active" href="register.html">
                         REGISTER
                     </a>
-                    <a class="modal__link modal__link--active" href="login.html">
+                    <a class="modal__link " href="login.html">
                         LOGIN
                     </a>
                 </div>
                 <form action="#" class="modal__form">
                     <label class="modal__label">
                         Username or email address*
-                        <input class="modal__input" type="text" required placeholder="Type Username or email address">
+                        <input class="modal__input" type="text" required placeholder="Username or email address">
                     </label>
                     <label class="modal__label">
                         Password*
                         <input class="modal__input" type="password" required placeholder="Input password">
                     </label>
+                    <span class="modal__text">
+                        A password will be sent to your email address.
+                    </span>
+                    <span class="modal__text">
+                        Your personal data will be used to support your experience throughout this website, to manage
+                        access to your account,
+                        and for other purposes described in our privacy policy.
+
+                    </span>
                     <label class="modal__label">
                         <input type="checkbox">
-                        Remember me
+                        Agree with Terms & Conditions
                     </label>
-                    <button class="modal__btn" type="submit">LOG IN</button>
-                    <a class="modal__wrong" href="#">Lost your password?</a>
+                    <button class="modal__btn" type="submit">REGISTER</button>
                 </form>
             </div>
         </section>
