@@ -34,14 +34,9 @@
 	}
 }
 
-//  поиск
+// блок поиск ==================================
 
 .filter-search {
-	// .filter-search__title
-
-	&__title {
-	}
-
 	// .filter-search__form
 
 	&__form {
@@ -70,36 +65,32 @@
 	}
 }
 
-//  рейндж цена
+// Блок - рейндж цена ==================================
 .filter-price {
 	&__label {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin-top: 30px;
+		padding-top: 30px;
 	}
 	&__btn {
 		@extend %btn;
 	}
 }
 .irs--flat .irs-line {
-	top: 25px;
+	top: 13px;
 	height: 5px;
 	background-color: $gray;
 }
 .irs--flat .irs-bar {
-	top: 25px;
+	top: 13px;
 	height: 5px;
 	background-color: $accent;
 }
 .irs--flat .irs-handle {
-	position: absolute;
-	display: block;
-	top: 14px;
-	left: 50%;
+	top: 0;
 	width: 30px;
 	height: 30px;
-	margin-left: -1px;
 	background-color: #fff;
 	box-shadow: 0px 0px 13px 0px rgba(90, 90, 90, 0.2);
 	cursor: pointer;
@@ -108,6 +99,107 @@
 	display: none;
 }
 .irs-to,
-.irs-from {
+.irs-from,
+.irs-single {
 	display: none;
+}
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+	display: none;
+}
+
+// фильтр по цветам ===========================
+
+.filter-color {
+	// .filter-color__label
+
+	&__label {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 20px;
+		border-bottom: 1px solid $gray;
+		& + .filter-color__label {
+			padding-top: 20px;
+		}
+		&:last-child {
+			border-bottom: none;
+			padding-bottom: 0;
+		}
+	}
+
+	// .filter-color__input
+
+	&__input {
+		@extend %checkbox-hidden;
+		&:checked + .filter-color__checkbox {
+			background-image: url(../images/icons/check-solid.svg);
+		}
+	}
+
+	// .filter-color__checkbox
+
+	&__checkbox {
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		margin-top: 5px;
+		margin-left: -16px;
+	}
+
+	// checkbox - цвета
+	&__checkbox--blue {
+		background-color: #00aeef;
+	}
+	&__checkbox--red {
+		background-color: #f52574;
+	}
+	&__checkbox--green {
+		background-color: #24d4ac;
+	}
+	&__checkbox--orange {
+		background-color: #ff7e00;
+	}
+	&__checkbox--black {
+		background-color: #000;
+	}
+	&__checkbox--purple {
+		background-color: #923899;
+	}
+}
+
+// фильтр по размеру
+
+.filter-size {
+	// .filter-size__label
+
+	&__label {
+		display: block;
+		padding-left: 35px;
+		margin-bottom: 20px;
+	}
+
+	// .filter-size__input
+
+	&__input {
+		@extend %checkbox-hidden;
+		&:checked + .filter-size__checkbox {
+			background-image: url(../images/icons/checkmark.svg);
+			border: none;
+			& + .filter-size__text {
+				color: $accent;
+			}
+		}
+	}
+
+	// .filter-size__chackbox
+
+	&__checkbox {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		margin-top: 2px;
+		margin-left: -30px;
+		border: 1px solid $default;
+		border-radius: 50%;
+	}
 }

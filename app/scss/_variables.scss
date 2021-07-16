@@ -34,3 +34,11 @@ $gray: #ececec;
 	border-radius: 5px;
 	box-shadow: 0px 0px 15px 0px rgba(255, 17, 48, 0.3);
 }
+
+%checkbox-hidden {
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	position: absolute;
+}
