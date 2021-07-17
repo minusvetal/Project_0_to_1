@@ -1,0 +1,263 @@
+.filter {
+	&__item {
+		padding: 40px 30px;
+		border: 1px solid $gray;
+		margin-bottom: 40px;
+	}
+	&__title {
+		@extend %roboto-400;
+		font-size: 22px;
+		text-transform: uppercase;
+		color: $title;
+		margin-bottom: 30px;
+	}
+	&__icon-search {
+		width: 15px;
+		height: 15px;
+		fill: #fff;
+	}
+}
+
+// блок поиск ==================================
+
+.filter-search {
+	// .filter-search__form
+
+	&__form {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .filter-search__input
+
+	&__input {
+		background-color: $bg;
+		width: 260px;
+		height: 50px;
+		padding: 18px;
+	}
+
+	// .filter-search__btn
+
+	&__btn {
+		width: 50px;
+		height: 50px;
+		background-color: $accent;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+// Блок - рейндж цена ==================================
+.filter-price {
+	&__label {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 30px;
+	}
+	&__btn {
+		@extend %btn;
+	}
+}
+.irs--flat .irs-line {
+	top: 13px;
+	height: 5px;
+	background-color: $gray;
+}
+.irs--flat .irs-bar {
+	top: 13px;
+	height: 5px;
+	background-color: $accent;
+}
+.irs--flat .irs-handle {
+	top: 0;
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	box-shadow: 0px 0px 13px 0px rgba(90, 90, 90, 0.2);
+	cursor: pointer;
+}
+.irs--flat .irs-handle > i:first-child {
+	display: none;
+}
+.irs-to,
+.irs-from,
+.irs-single {
+	display: none;
+}
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+	display: none;
+}
+
+// фильтр по цветам ===========================
+
+.filter-color {
+	// .filter-color__label
+
+	&__label {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 20px;
+		border-bottom: 1px solid $gray;
+		& + .filter-color__label {
+			padding-top: 20px;
+		}
+		&:last-child {
+			border-bottom: none;
+			padding-bottom: 0;
+		}
+	}
+
+	// .filter-color__input
+
+	&__input {
+		@extend %checkbox-hidden;
+		&:checked + .filter-color__checkbox {
+			background-image: url(../images/icons/check-solid.svg);
+		}
+	}
+
+	// .filter-color__checkbox
+
+	&__checkbox {
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		margin-top: 5px;
+		margin-left: -16px;
+	}
+
+	// checkbox - цвета
+	&__checkbox--blue {
+		background-color: #00aeef;
+	}
+	&__checkbox--red {
+		background-color: #f52574;
+	}
+	&__checkbox--green {
+		background-color: #24d4ac;
+	}
+	&__checkbox--orange {
+		background-color: #ff7e00;
+	}
+	&__checkbox--black {
+		background-color: #000;
+	}
+	&__checkbox--purple {
+		background-color: #923899;
+	}
+}
+
+// фильтр по размеру
+
+.filter-size {
+	// .filter-size__label
+
+	&__label {
+		display: block;
+		padding-left: 35px;
+		margin-bottom: 20px;
+	}
+
+	// .filter-size__input
+
+	&__input {
+		@extend %checkbox-hidden;
+		&:checked + .filter-size__checkbox {
+			background-image: url(../images/icons/checkmark.svg);
+			border: none;
+			& + .filter-size__text {
+				color: $accent;
+			}
+		}
+	}
+
+	// .filter-size__chackbox
+
+	&__checkbox {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		margin-top: 2px;
+		margin-left: -30px;
+		border: 1px solid $default;
+		border-radius: 50%;
+	}
+}
+
+// фильтр по категориям
+
+.filter-category {
+	// .filter-category__label
+
+	&__label {
+		display: block;
+		margin-bottom: 15px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	// .filter-category__input
+
+	&__input {
+		@extend %checkbox-hidden;
+		&:checked + .filter-category__checkbox {
+			background-color: $accent;
+			color: #fff;
+		}
+	}
+
+	// .filter-category__checkbox
+
+	&__checkbox {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: $bg;
+		color: $title;
+		padding: 16px 20px;
+		cursor: pointer;
+	}
+}
+
+//  фильтр по популярности
+
+.filter-popular {
+	// .filter-popular__label
+
+	&__label {
+		display: inline-block;
+		margin-bottom: 20px;
+		margin-right: 8px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	// .filter-popular__input
+
+	&__input {
+		@extend %checkbox-hidden;
+		&:checked + .filter-popular__checkbox {
+			background-color: $accent;
+			color: #fff;
+			border: 1px solid $accent;
+		}
+	}
+
+	// .filter-popular__checkbox
+
+	&__checkbox {
+		display: flex;
+		align-items: center;
+		background-color: $bg;
+		color: $title;
+		padding: 10px 20px;
+		border: 1px solid $default;
+		cursor: pointer;
+	}
+}
