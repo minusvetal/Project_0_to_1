@@ -24,6 +24,7 @@
 		"install": "^0.13.0",
 		"ion-rangeslider": "^2.3.1",
 		"jquery": "^3.6.0",
+		"jquery-form-styler": "^2.0.2",
 		"npm": "^7.19.1",
 		"rateyo": "^2.3.2",
 		"sass": "^1.35.2",
