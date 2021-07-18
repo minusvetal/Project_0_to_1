@@ -18,7 +18,6 @@
 	grid-gap: 45px 30px;
 }
 .product-item {
-	position: relative;
 	max-width: 370px;
 	text-align: center;
 	&:hover {
@@ -26,6 +25,7 @@
 			transform: translateY(0);
 		}
 	}
+
 	&__sale {
 		.product-item__img-box::before {
 			content: "sale";
@@ -42,13 +42,16 @@
 			padding: 5px 10px;
 		}
 	}
-
+	&__content-box {
+		display: none;
+	}
 	// .product-item__img-box
 
 	&__img-box {
 		position: relative;
 		height: 370px;
 		overflow: hidden;
+		margin-bottom: 25px;
 	}
 
 	// .product-item__images
@@ -131,6 +134,7 @@
 		color: #ccccce;
 		text-decoration: line-through;
 	}
+	@import "product-line";
 }
 
 .star {

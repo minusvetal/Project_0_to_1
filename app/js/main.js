@@ -16,6 +16,20 @@ $(function () {
 	//  подключаем стили для селектов
 	$(".select-style").styler();
 
+	// меняем вид карточек
+
+	$(".shop-content__filter-btn").on("click", function () {
+		$(".shop-content__filter-btn").removeClass("shop-content__filter-btn--active");
+		$(this).addClass("shop-content__filter-btn--active");
+	});
+
+	$(".button-list").on("click", () => {
+		$(".product-item").addClass("product-item--list");
+	});
+	$(".button-grid").on("click", () => {
+		$(".product-item").removeClass("product-item--list");
+	});
+
 	//  slick-slider
 	$(".top-slider__inner").slick({
 		dots: true,
