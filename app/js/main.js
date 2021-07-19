@@ -14,7 +14,7 @@ $(function () {
 	});
 
 	//  подключаем стили для селектов
-	$(".select-style").styler();
+	$(".select-style, .goods-item__num").styler();
 
 	// меняем вид карточек
 
@@ -42,22 +42,20 @@ $(function () {
 	// слайдер товара
 
 	$(".goods-slide__thumb").slick({
-		asNavFor: ".goods-slide__big",
-		slidesToShow: 4,
+		slidesToShow: 3,
 		slidesToScroll: 1,
+		centerMode: true,
+		focusOnSelect: true,
 		vertical: true,
 		draggable: false,
-
-		// autoplay: true,
-		// autoplaySpeed: 2000,
+		arrows: false,
+		asNavFor: ".goods-slide__big",
 	});
 	$(".goods-slide__big").slick({
-		asNavFor: ".goods-slide__thumb",
 		draggable: false,
 		arrows: false,
-		// autoplay: true,
-		// autoplaySpeed: 2000,
-		// fade: true,
+		fade: true,
+		asNavFor: ".goods-slide__thumb",
 	});
 
 	//star - рейтинг

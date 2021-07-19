@@ -105,6 +105,10 @@
                         <div class="goods-item__slide goods-slide">
                             <div class="goods-slide__thumb">
                                 <div class="goods-slide__thumb-item">
+                                    <img class="goods-slide__thumb-img" src="images/goods/01/good-main_image.jpg"
+                                        alt="фото товара">
+                                </div>
+                                <div class="goods-slide__thumb-item">
                                     <img class="goods-slide__thumb-img" src="images/goods/01/good-01-01.jpg"
                                         alt="фото товара">
                                 </div>
@@ -124,6 +128,10 @@
                             <!-- goods-slide__thumb -->
 
                             <div class="goods-slide__big">
+                                <div class="goods-slide__big-item">
+                                    <img class="goods-slide__big-img" src="images/goods/01/good-main_image-big.jpg"
+                                        alt="фото товара">
+                                </div>
                                 <div class="goods-slide__big-item">
                                     <img class="goods-slide__big-img" src="images/goods/01/good-01-01-big.jpg"
                                         alt="фото товара">
@@ -154,13 +162,15 @@
                                     <div class="goods-item__price--old">(29.00)</div>
                                 </div>
                                 <div class="goods-item__star">
-                                    <div class="star" data-rateyo-rating='3.5'>
-                                    </div>(22)
+                                    <div class="star" data-rateyo-rating='4.5'>
+                                    </div>
+                                    <span>(22)</span>
+
                                 </div>
 
                             </div>
                             <p class="goods-item__text">
-                                <span> <strong>Review:</strong> </span>
+                                <span>Review:</span>
                                 Lorem ipsum dolor sit amet, consectetur adipscg elit, sed do eiusmod tempor incididunt
                                 ut laborea et dolore magna alqua.
                                 Quis ipsum suspendssem moa ultrices gravida.
@@ -228,26 +238,26 @@
                                 </div>
                                 <!-- /.goods-filter__size -->
 
-                                <div class="goods-item__info poduct-info">
-                                    <ul class="poduct-info__list">
-                                        <li class="poduct-info__item">
-                                            <div class="poduct-info__title">
+                                <div class="goods-item__info goods-info">
+                                    <ul class="goods-info__list">
+                                        <li class="goods-info__item">
+                                            <div class="goods-info__title">
                                                 SKU :
                                             </div>
-                                            <div class="poduct-info__text">
+                                            <div class="goods-info__text">
                                                 11FSE7739
                                             </div>
                                         </li>
-                                        <li class="poduct-info__item">
-                                            <div class="poduct-info__title">
+                                        <li class="goods-info__item">
+                                            <div class="goods-info__title">
                                                 Categories :
                                             </div>
-                                            <div class="poduct-info__text">
+                                            <div class="goods-info__text">
                                                 Woman
                                             </div>
                                         </li>
-                                        <li class="poduct-info__item">
-                                            <div class="poduct-info__title">
+                                        <li class="goods-info__item">
+                                            <div class="goods-info__title">
                                                 Tags :
                                             </div>
                                             <div class="poduct-info__text">
@@ -256,29 +266,38 @@
                                                 <a href="#" class=""> Sale</a>
                                             </div>
                                         </li>
-                                        <li class="poduct-info__item">
-                                            <div class="poduct-info__title">
+                                        <li class="goods-info__item">
+                                            <div class="goods-info__title">
                                                 Share :
                                             </div>
-                                            <div class="poduct-info__text">
-                                                <svg class="icon icon-facebook">
-                                                    <use href="images/icons/icons.svg#facebook"></use>
-                                                </svg>
-                                                <svg class="icon icon-twitter">
-                                                    <use href="images/icons/icons.svg#twitter"></use>
-                                                </svg>
-                                                <svg class="icon icon-linkedin">
-                                                    <use href="images/icons/icons.svg#linkedin"></use>
-                                                </svg>
-                                                <svg class="icon icon-google">
-                                                    <use href="images/icons/icons.svg#google"></use>
-                                                </svg>
-                                                <svg class="icon icon-pinterest">
-                                                    <use href="images/icons/icons.svg#pinterest"></use>
-                                                </svg>
-                                                <svg class="icon icon-instagram">
-                                                    <use href="images/icons/icons.svg#instagram"></use>
-                                                </svg>
+                                            <div class="goods-info__text">
+
+
+                                                <a class='goods-info__link' href="#">
+                                                    <svg class="icon icon-facebook">
+                                                        <use href="images/icons/icons.svg#facebook"></use>
+                                                    </svg>
+                                                </a>
+                                                <a class='goods-info__link' href="#">
+                                                    <svg class="icon icon-twitter">
+                                                        <use href="images/icons/icons.svg#twitter"></use>
+                                                    </svg>
+                                                </a>
+                                                <a class='goods-info__link' href="#">
+                                                    <svg class="icon icon-linkedin">
+                                                        <use href="images/icons/icons.svg#linkedin"></use>
+                                                    </svg>
+                                                </a>
+                                                <a class='goods-info__link' href="#">
+                                                    <svg class="icon icon-pinterest">
+                                                        <use href="images/icons/icons.svg#pinterest"></use>
+                                                    </svg>
+                                                </a>
+                                                <a class='goods-info__link' href="#">
+                                                    <svg class="icon icon-instagram">
+                                                        <use href="images/icons/icons.svg#instagram"></use>
+                                                    </svg>
+                                                </a>
                                             </div>
                                         </li>
                                     </ul>
@@ -287,9 +306,8 @@
                                 </div>
                                 <!-- /.goods-item__info -->
 
-                                <input class="goods-item__number" type="number">
-                                <button class="goods-item__btn">-</button>
-                                <button class="goods-item__btn">+</button>
+                                <input class="goods-item__num" value="0" min="0" type="number">
+                                <button class="goods-item__btn" type="submit">Add to cart</button>
                                 <!-- /.goods-item__number -->
                             </form>
                             <!-- form -->
