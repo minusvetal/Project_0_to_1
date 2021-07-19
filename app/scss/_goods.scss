@@ -1,0 +1,201 @@
+.goods {
+	padding: 120px 0 60px 0;
+}
+
+.goods-item {
+	border-bottom: 2px solid $gray;
+	// .goods-item__inner
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .goods-item__slide
+
+	&__slide {
+		width: 730px;
+		margin-right: 70px;
+	}
+
+	// .goods-item__content
+
+	&__content {
+		width: 370px;
+	}
+
+	// .goods-item__title
+
+	&__title {
+	}
+
+	// .goods-item__box
+
+	&__box {
+	}
+
+	// .goods-item__price
+
+	&__price {
+	}
+
+	// .goods-item__price--new
+
+	&__price--new {
+	}
+
+	// .goods-item__price--old
+
+	&__price--old {
+	}
+
+	// .goods-item__star
+
+	&__star {
+	}
+
+	// .goods-item__text
+
+	&__text {
+	}
+
+	// .goods-item__form
+
+	&__form {
+	}
+
+	// .goods-item__color
+
+	&__color {
+	}
+
+	// .goods-item__info
+
+	&__info {
+	}
+
+	// .goods-item__number
+
+	&__number {
+	}
+
+	// .goods-item__btn
+
+	&__btn {
+	}
+}
+.goods-slide {
+	// .goods-slide__thumb
+
+	&__thumb {
+		width: 140px;
+		margin-right: 30px;
+	}
+
+	// .goods-slide__thumb-item
+
+	&__thumb-item {
+		width: 140px;
+		height: 140px;
+		margin-bottom: 30px;
+	}
+
+	// .goods-slide__thumb-img
+
+	&__thumb-img {
+		width: 140px;
+		height: 140px;
+		object-fit: cover;
+	}
+
+	// .goods-slide__big
+
+	&__big {
+		width: 560px;
+	}
+
+	// .goods-slide__big-item
+
+	&__big-item {
+	}
+
+	// .goods-slide__big-img
+
+	&__big-img {
+		width: 560px;
+		height: 650px;
+		object-fit: contain;
+	}
+}
+.star {
+}
+.goods-filter {
+	// .goods-filter__color-title
+
+	&__color-title {
+	}
+
+	// .goods-filter__color-input
+
+	&__color-input {
+	}
+
+	// .goods-filter__checkbox
+
+	&__checkbox {
+	}
+
+	// .goods-filter__size
+
+	&__size {
+	}
+
+	// .goods-filter__size-title
+
+	&__size-title {
+	}
+
+	// .goods-filter__size-input
+
+	&__size-input {
+	}
+}
+.poduct-info {
+	// .poduct-info__list
+
+	&__list {
+	}
+
+	// .poduct-info__item
+
+	&__item {
+	}
+
+	// .poduct-info__title
+
+	&__title {
+	}
+
+	// .poduct-info__text
+
+	&__text {
+	}
+}
+.icon {
+}
+.icon-facebook {
+}
+.icon-twitter {
+}
+.icon-linkedin {
+}
+.icon-google {
+}
+.icon-pinterest {
+}
+.icon-instagram {
+}
+.goods-tabs {
+}
+.goods-reviews {
+}

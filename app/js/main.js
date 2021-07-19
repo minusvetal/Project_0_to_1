@@ -39,6 +39,27 @@ $(function () {
 		// fade: true,
 	});
 
+	// слайдер товара
+
+	$(".goods-slide__thumb").slick({
+		asNavFor: ".goods-slide__big",
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		vertical: true,
+		draggable: false,
+
+		// autoplay: true,
+		// autoplaySpeed: 2000,
+	});
+	$(".goods-slide__big").slick({
+		asNavFor: ".goods-slide__thumb",
+		draggable: false,
+		arrows: false,
+		// autoplay: true,
+		// autoplaySpeed: 2000,
+		// fade: true,
+	});
+
 	//star - рейтинг
 	$(function () {
 		$(".star").rateYo({
