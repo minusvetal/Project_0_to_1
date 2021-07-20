@@ -1,0 +1,125 @@
+.blog {
+	background-image: url(../images/blog/blog-bg.svg);
+	background-repeat: no-repeat;
+	background-position: bottom 60px center;
+	text-align: center;
+	// .blog__title
+
+	&__title {
+		font-size: 48px;
+		line-height: 26px;
+		@extend %roboto-700;
+		color: $title;
+		margin-bottom: 15px;
+	}
+
+	// .blog__text
+
+	&__text {
+		max-width: 670px;
+		margin: 0 auto;
+	}
+
+	// .blog__items
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		padding: 40px 0 120px;
+		&::after {
+			content: "";
+			position: absolute;
+			right: -23px;
+			top: 15px;
+			width: 126px;
+			height: 53px;
+			background-image: url(../images/blog/blog-point-right.svg);
+			z-index: -1;
+		}
+	}
+
+	// .blog__item
+
+	&__item {
+		max-width: 370px;
+		border: 1px solid #ececec;
+		padding-bottom: 30px;
+		overflow: hidden;
+		transition: all 0.3s;
+		&:hover {
+			background: #fff;
+			box-shadow: 20px 0 60px 0 rgba(202, 202, 202, 0.8);
+			border: 1px solid transparent;
+			.blog__title-link {
+				color: $accent;
+				svg {
+					fill: $accent;
+				}
+			}
+		}
+	}
+	&__itembox {
+		padding: 0 30px 26px 30px;
+	}
+	// .blog__item-imglink
+
+	&__item-imglink {
+		display: block;
+		margin-bottom: 30px;
+	}
+
+	// .blog__img
+
+	&__img {
+		height: 288px;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	// .blog__item-info
+
+	&__item-info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 16px;
+		line-height: 26px;
+		margin-bottom: 18px;
+	}
+
+	// .blog__item-autor
+
+	&__item-autor,
+	&__item-date {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 18px;
+		svg {
+			margin-right: 10px;
+		}
+	}
+
+	// .blog__item-title
+
+	&__item-title {
+		color: $title;
+		font-size: 22px;
+		@extend %roboto-400;
+		text-align: left;
+		margin-bottom: 10px;
+	}
+
+	// .blog__title-link
+
+	&__title-link {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.icon-arrow {
+	margin: 5px;
+}
