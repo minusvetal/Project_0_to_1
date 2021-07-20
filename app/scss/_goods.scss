@@ -1,15 +1,20 @@
 .goods {
 	padding: 120px 0 60px 0;
+	border-bottom: 2px solid $gray;
+
+	// ========================
+
+	@import "goods_tabs";
+	@import "goods_reviews";
 }
 
 .goods-item {
-	border-bottom: 2px solid $gray;
-	margin-bottom: 120px;
 	// .goods-item__inner
 
 	&__inner {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: 120px;
 	}
 
 	// .goods-item__slide
@@ -232,7 +237,7 @@
 
 .goods-info {
 	margin-bottom: 40px;
-// .goods-info__item
+	// .goods-info__item
 
 	&__item {
 		display: flex;
@@ -347,10 +352,4 @@
 	border: none;
 	background: transparent;
 	box-shadow: none;
-}
-
-// ========================
-.goods-tabs {
-}
-.goods-reviews {
 }
