@@ -1,0 +1,22 @@
+.related {
+	margin: 60px 0 115px 0;
+	&__title {
+		margin-bottom: 50px;
+	}
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-column-gap: 30px;
+		.product-item__img-box {
+			height: auto;
+			margin: 0;
+		}
+		.star {
+			margin-top: 10px;
+		}
+		.product-item__title {
+			padding: 10px 10px;
+			font-size: 18px;
+		}
+	}
+}
