@@ -15,6 +15,7 @@
 
 	// __popup
 	&__popup {
+		position: relative;
 		max-width: 530px;
 		width: 100%;
 		height: 480px;
@@ -24,6 +25,22 @@
 		align-items: center;
 		background-repeat: no-repeat;
 		background-position: center center;
+		&:before {
+			content: "";
+			position: absolute;
+			width: 120px;
+			height: 120px;
+			background: $accent;
+			opacity: 0.5;
+			position: absolute;
+			border-radius: 50%;
+			left: 204px;
+			top: 176px;
+			animation: pulse 0.5s ease-in-out 0.5s infinite;
+		}
+	}
+	&__play {
+		z-index: 1;
 	}
 
 	// .video-fashon__content

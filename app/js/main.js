@@ -49,6 +49,14 @@ $(function () {
 		// autoplaySpeed: 2000,
 		// fade: true,
 	});
+	//  slick-slider
+	$(".blog-page__slider").slick({
+		dots: false,
+		arrows: true,
+		// autoplay: true,
+		// autoplaySpeed: 2000,
+		// fade: true,
+	});
 
 	// слайдер товара
 
