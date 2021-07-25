@@ -1,5 +1,41 @@
 .blog-page {
 	padding: 120px 0 60px;
+	&__slider {
+		.slick-prev,
+		.slick-next {
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			top: 50%;
+			background-color: $accent;
+			box-shadow: 0px 7px 20px 0px rgba(254, 62, 87, 0.3);
+			transform: translateY(-50%);
+			z-index: 5;
+			path {
+				fill: #fff;
+			}
+		}
+		.slick-next {
+			right: 3%;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+		}
+		.slick-prev {
+			left: 3%;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+		}
+		.slick-disabled {
+			background-color: #fff;
+			box-shadow: 0px 7px 20px 0px rgba(168, 168, 168, 0.3);
+			path {
+				fill: $title;
+			}
+		}
+	}
 	&__inner {
 		display: flex;
 		justify-content: space-between;
@@ -116,5 +152,101 @@
 	&__aside {
 		max-width: 370px;
 		width: 100%;
+		.person {
+			text-align: center;
+			padding: 40px 30px;
+			margin-bottom: 40px;
+			border: 1px solid #ececec;
+			// .person__img
+
+			&__img {
+				display: inline-block;
+				max-width: 160px;
+				max-height: 160px;
+				margin: 0 auto;
+				object-fit: cover;
+				margin-bottom: 40px;
+			}
+
+			// .person__title
+
+			&__name {
+				@extend %roboto-700;
+				font-size: 18px;
+				line-height: 26px;
+				color: $title;
+				margin-bottom: 11px;
+			}
+
+			// .person__subtitle
+
+			&__position {
+				color: $accent;
+				margin-bottom: 30px;
+			}
+
+			// .person__text
+
+			&__text {
+				color: $default;
+				text-align: justify;
+			}
+			&__social-list {
+				justify-content: center;
+			}
+		}
+		.latest-posts {
+			padding: 40px 30px;
+			border: 1px solid $gray;
+			margin-bottom: 40px;
+			&__title {
+				@extend %roboto-400;
+				font-size: 22px;
+				line-height: 1.2;
+				color: $title;
+				text-transform: uppercase;
+				margin-bottom: 40px;
+			}
+			&__item {
+				display: flex;
+				min-height: 80px;
+				margin-top: 20px;
+				padding-bottom: 20px;
+				border-bottom: 1px solid $gray;
+				&:last-child {
+					border-bottom: none;
+					padding-bottom: 0;
+				}
+			}
+			&__img-link {
+				display: block;
+				min-width: 80px;
+				margin-right: 15px;
+			}
+			&__img {
+				width: 80px;
+				height: 80px;
+				object-fit: cover;
+			}
+
+			&__text {
+				@extend %roboto-400;
+				font-size: 18px;
+				line-height: 28px;
+				color: $title;
+			}
+			&__date {
+				display: flex;
+				align-items: center;
+				@extend %roboto-400;
+				color: $default;
+			}
+			.icon-calendar {
+				width: 16px;
+				height: 16px;
+				align-items: center;
+				margin-right: 10px;
+			}
+		}
 	}
 }
