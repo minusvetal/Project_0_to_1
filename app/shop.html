@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="images/icons/logo.svg" alt="логотип">
+                </a>
+                <!-- /. logo -->
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link menu__list-link--active" href="index.html">HOME</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="shop.html">SHOP</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">PAGE</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">BLOG</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.nav -->
+                <div class="user-nav">
+                    <a class="user-nav__link" href="#">
+                        <svg class="icon icon-user">
+                            <use href="images/icons/icons.svg#user"></use>
+                        </svg>
+                    </a>
+                    <a class="user-nav__link" href="#">
+                        <svg class="icon icon-search">
+                            <use href="images/icons/icons.svg#search"></use>
+                        </svg>
+                    </a>
+                    <a class="user-nav__link" href="#">
+                        <svg class="icon icon-heart">
+                            <use href="images/icons/icons.svg#heart"></use>
+                        </svg>
+                        <span class="user__nav-num">3</span>
+                    </a>
+                    <a class="user-nav__link" href="#">
+                        <svg class="icon icon-cart">
+                            <use href="images/icons/icons.svg#cart"></use>
+                        </svg>
+                        <span class="user__nav-num">7</span>
+                    </a>
+
+                </div>
+                <!-- /.user-nav -->
+
+            </div>
+        </div>
+        <!-- /.container -->
+    </header>
+    <!-- /.header -->
+
+
+    <main class="main">
+        <section class="top">
+            <div class="top-container" style="background-image: url(../images/top/top_bg.png);">
+                <div class="container">
+                    <h2 class="top__title">SHOP PAGE</h2>
+                    <div class="bredcrumbs">
+                        <ul class="bredcrumbs__list">
+                            <li class="bredcrumbs__item">
+                                <a class="bredcrumbs__link" href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="bredcrumbs__item">
+                                <a class="bredcrumbs__link" href="#">
+                                    Shop page
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--/. bredcrumbs -->
+
+            </div>
+        </section>
+
+        <section class="shop">
+            <div class="container">
+                <div class="shop__inner">
+                    <div class="shop__filters filter">
+                        <div class="filter-search filter__item">
+                            <h3 class="filter-search__title filter__title">Search</h3>
+                            <form class="filter-search__form" action="#">
+                                <input class="filter-search__input" type="text" placeholder="Search your keyword....">
+                                <button class="filter-search__btn" type="submit">
+                                    <svg class="filter__icon-search">
+                                        <use href="images/icons/icons.svg#search"></use>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                        <!-- /.filter__search -->
+
+                        <div class="filter__item filter-price">
+                            <h3 class="filter-search__title filter__title">Price Filter</h3>
+                            <form class="filter-price" action="#">
+                                <input class="filter-price__input" type="text" data-min="0" data-max="999"
+                                    data-from="200" data-to="800">
+                                <div class="filter-price__label">
+                                    <span>Price:
+                                        $<span class="filter-price__from"></span>-
+                                        $<span class="filter-price__to"></span>
+                                    </span>
+                                    <button class="filter-price__btn" type="submit">Filter</button>
+                                </div>
+                            </form>
+                            <!-- RangeSlider -->
+                        </div>
+                        <!-- /.filter-price -->
+                        <div class="filter__item filter-color">
+                            <h3 class="filter-color__title filter__title">Color Filter</h3>
+                            <form class="filter-color__form" action="#">
+
+                                <label class="filter-color__label">
+                                    <span class="filter-color__text">Blue (15)</span>
+                                    <div class="filter-color__box">
+                                        <input class="filter-color__input" type="checkbox">
+                                        <span class="filter-color__checkbox filter-color__checkbox--blue"></span>
+                                    </div>
+                                </label>
+                                <!-- конец цвета -->
+
+                                <label class="filter-color__label">
+                                    <span class="filter-color__text">Red (09)</span>
+                                    <div class="filter-color__box">
+                                        <input class="filter-color__input" checked type="checkbox">
+                                        <span class="filter-color__checkbox filter-color__checkbox--red"></span>
+                                    </div>
+                                </label>
+                                <!-- конец цвета -->
+
+                                <label class="filter-color__label">
+                                    <span class="filter-color__text">Green (28)</span>
+                                    <div class="filter-color__box">
+                                        <input class="filter-color__input" type="checkbox">
+                                        <span class="filter-color__checkbox filter-color__checkbox--green"></span>
+                                    </div>
+                                </label>
+                                <!-- конец цвета -->
+
+                                <label class="filter-color__label">
+                                    <span class="filter-color__text">Orange (11)</span>
+                                    <div class="filter-color__box">
+                                        <input class="filter-color__input" type="checkbox">
+                                        <span class="filter-color__checkbox filter-color__checkbox--orange"></span>
+                                    </div>
+                                </label>
+                                <!-- конец цвета -->
+
+                                <label class="filter-color__label">
+                                    <span class="filter-color__text">Black (05)</span>
+                                    <div class="filter-color__box">
+                                        <input class="filter-color__input" type="checkbox">
+                                        <span class="filter-color__checkbox filter-color__checkbox--black"></span>
+                                    </div>
+                                </label>
+                                <!-- конец цвета -->
+
+                                <label class="filter-color__label">
+                                    <span class="filter-color__text">Purple (21)</span>
+                                    <div class="filter-color__box">
+                                        <input class="filter-color__input" type="checkbox">
+                                        <span class="filter-color__checkbox filter-color__checkbox--purple"></span>
+                                    </div>
+                                </label>
+                                <!-- конец цвета -->
+
+                            </form>
+
+                        </div>
+                        <!-- /.filter-color -->
+                        <div class="filter__item filter-size">
+                            <h3 class="filter-size__title filter__title">Size Filter</h3>
+                            <form class="filter-size__form" action="#">
+                                <label class="filter-size__label">
+                                    <input class="filter-size__input" type="checkbox">
+                                    <span class="filter-size__checkbox"></span>
+                                    <span class="filter-size__text">X-small</span>
+                                </label>
+                                <!-- размер -->
+                                <label class="filter-size__label">
+                                    <input class="filter-size__input" type="checkbox">
+                                    <span class="filter-size__checkbox"></span>
+                                    <span class="filter-size__text">Small</span>
+                                </label>
+                                <!-- размер -->
+                                <label class="filter-size__label">
+                                    <input class="filter-size__input" checked type="checkbox">
+                                    <span class="filter-size__checkbox"></span>
+                                    <span class="filter-size__text">Medium</span>
+                                </label>
+                                <!-- размер -->
+                                <label class="filter-size__label">
+                                    <input class="filter-size__input" type="checkbox">
+                                    <span class="filter-size__checkbox"></span>
+                                    <span class="filter-size__text">Large</span>
+                                </label>
+                                <!-- размер -->
+                                <label class="filter-size__label">
+                                    <input class="filter-size__input" type="checkbox">
+                                    <span class="filter-size__checkbox"></span>
+                                    <span class="filter-size__text">XXL</span>
+                                </label>
+                                <!-- размер -->
+                            </form>
+
+
+                        </div>
+                        <!-- /.filter-size -->
+                        <div class="filter__item filter-category">
+                            <h3 class="filter-category__title filter__title">CATEGORY</h3>
+                            <form class="filter-category__form" action="#">
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span class="filter-category__text">Woman</span>
+                                        <span class="filter-category__num">48</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" checked type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span class="filter-category__text">Man</span>
+                                        <span class="filter-category__num">30</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span class="filter-category__text">Sale Products</span>
+                                        <span class="filter-category__num">92</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span class="filter-category__text">Fashion</span>
+                                        <span class="filter-category__num">121</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span class="filter-category__text">Hot Dresses</span>
+                                        <span class="filter-category__num">52</span>
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="checkbox">
+                                    <div class="filter-category__checkbox">
+                                        <span class="filter-category__text">Accessories</span>
+                                        <span class="filter-category__num">88</span>
+                                    </div>
+                                </label>
+                            </form>
+                        </div>
+                        <!-- /. filter-category -->
+
+                        <div class="filter__item filter-popular">
+                            <h3 class="filter-popular__title filter__title">Popular tags</h3>
+                            <form class="filter-popular__form" action="#">
+                                <label class="filter-popular__label">
+                                    <input class="filter-popular__input" type="checkbox">
+                                    <span class="filter-popular__checkbox">Sweetshirt</span>
+                                </label>
+
+                                <label class="filter-popular__label">
+                                    <input class="filter-popular__input" checked type="checkbox">
+                                    <span class="filter-popular__checkbox">Man Accessories</span>
+                                </label>
+
+                                <label class="filter-popular__label">
+                                    <input class="filter-popular__input" type="checkbox">
+                                    <span class="filter-popular__checkbox">Fashion</span>
+                                </label>
+
+                                <label class="filter-popular__label">
+                                    <input class="filter-popular__input" type="checkbox">
+                                    <span class="filter-popular__checkbox">Polo</span>
+                                </label>
+
+                                <label class="filter-popular__label">
+                                    <input class="filter-popular__input" type="checkbox">
+                                    <span class="filter-popular__checkbox">T-Shirt</span>
+                                </label>
+
+                                <label class="filter-popular__label">
+                                    <input class="filter-popular__input" type="checkbox">
+                                    <span class="filter-popular__checkbox">Jewellery</span>
+                                </label>
+
+
+
+                            </form>
+
+
+
+                        </div>
+                        <!-- /. filter-popular -->
+
+
+                    </div>
+                    <!-- /.shop__filters -->
+
+                    <div class="shop-content">
+                        <div class="shop-content__filter">
+                            <div class="shop-content__filter-buttons">
+                                View
+                                <button class="shop-content__filter-btn shop-content__filter-btn--active button-grid">
+                                    <svg class="icon-list">
+                                        <use href="images/icons/icons.svg#grid"></use>
+                                    </svg>
+                                </button>
+                                <button class="shop-content__filter-btn button-list">
+                                    <svg class=" icon-list">
+                                        <use href="images/icons/icons.svg#list"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="shop-content__filter-selects">
+                                <form class="shop-content__filter-form" action="#">
+                                    <select class="shop-content__filter-sort select-style">
+                                        <option value="">Sort By Default</option>
+                                        <option value="">Category</option>
+                                        <option value="">Size</option>
+                                        <option value="">Color</option>
+                                        <option value="">Price</option>
+                                    </select>
+
+                                    <select class="shop-content__filter-show select-style">
+                                        <option value="">Show 10</option>
+                                        <option value="">20</option>
+                                        <option value="">30</option>
+                                        <option value="">40</option>
+                                        <option value="">All</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- /.shop-content__filter -->
+                        <div class="shop-content__inner">
+                            <!-- карточка 01-->
+                            <div class="product-item ">
+                                <div class="product-item__img-box">
+                                    <img class="product-item__images" src="images/product/product-01.png"
+                                        alt="фото товара">
+                                    <div class="product-item__link-box">
+                                        <a class="product-item__link" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#search"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="product-item__link product-item__link-line" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#bag"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="product-item__link" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <!-- /.всплывающее меню product-item__link-box -->
+                                </div>
+                                <div class="product-item__wrapper-box">
+                                    <div class="product-item__box">
+                                        <div class="star" data-rateyo-rating='4.5'></div>
+                                        <!-- /.star звездный рейтинг -->
+                                        <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                                        <div class="product-item__price">
+                                            <div class="product-item__new-price">$ 34.00 </div>
+                                            <div class="product-item__old-price">$ 27.00 </div>
+                                        </div>
+                                    </div>
+                                    <!-- product-item__box -->
+                                    <div class="product-item__content-box">
+                                        <p class="product-item__text">
+                                            Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et
+                                            dolore magna aliqua.
+                                        </p>
+                                        <button class="product-item__btn ">
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                    <!-- /.product-item__content -->
+                                </div>
+                                <!-- /.product-item__wrapper-box -->
+                                <!-- /.product-item__price -->
+                            </div>
+                            <!-- конец карточки -->
+                            <!-- карточка 02-->
+                            <div class="product-item product-item__sale">
+                                <div class="product-item__img-box">
+                                    <img class="product-item__images" src="images/product/product-02.png"
+                                        alt="фото товара">
+                                    <div class="product-item__link-box">
+                                        <a class="product-item__link" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#search"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="product-item__link product-item__link-line" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#bag"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="product-item__link" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <!-- /.всплывающее меню product-item__link-box -->
+                                </div>
+
+                                <div class="product-item__wrapper-box">
+                                    <div class="product-item__box">
+                                        <div class="star" data-rateyo-rating='3.5'></div>
+                                        <!-- /.star звездный рейтинг -->
+                                        <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                                        <div class="product-item__price">
+                                            <div class="product-item__new-price">$ 54.00 </div>
+                                            <div class="product-item__old-price">$ 27.00 </div>
+                                        </div>
+                                    </div>
+                                    <!-- product-item__box -->
+                                    <div class="product-item__content-box">
+                                        <p class="product-item__text">
+                                            Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et
+                                            dolore magna aliqua.
+                                        </p>
+                                        <button class="product-item__btn ">
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                    <!-- /.product-item__content -->
+                                </div>
+                            </div>
+                            <!-- конец карточки -->
+                            <!-- карточка 03-->
+                            <div class="product-item">
+                                <div class="product-item__img-box">
+                                    <img class="product-item__images" src="images/product/product-03.png"
+                                        alt="фото товара">
+                                    <div class="product-item__link-box">
+                                        <a class="product-item__link" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#search"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="product-item__link product-item__link-line" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#bag"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="product-item__link" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <!-- /.всплывающее меню product-item__link-box -->
+                                </div>
+
+                                <div class="product-item__wrapper-box">
+                                    <div class="product-item__box">
+                                        <div class="star" data-rateyo-rating='3'></div>
+                                        <!-- /.star звездный рейтинг -->
+                                        <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                                        <div class="product-item__price">
+                                            <div class="product-item__new-price">$ 34.00 </div>
+                                            <div class="product-item__old-price">$ 27.00 </div>
+                                        </div>
+                                    </div>
+                                    <!-- product-item__box -->
+                                    <div class="product-item__content-box">
+                                        <p class="product-item__text">
+                                            Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et
+                                            dolore magna aliqua.
+                                        </p>
+                                        <button class="product-item__btn ">
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                    <!-- /.product-item__content -->
+                                </div>
+                                <!-- /.product-item__wrapper-box -->
+                                <!-- /.product-item__price -->
+                            </div>
+                            <!-- конец карточки -->
+                            <!-- карточка 04-->
+                            <div class="product-item product-item__sale">
+                                <div class="product-item__img-box">
+                                    <img class="product-item__images" src="images/product/product-04.png"
+                                        alt="фото товара">
+                                    <div class="product-item__link-box">
+                                        <a class="product-item__link" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#search"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="product-item__link product-item__link-line" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#bag"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="product-item__link" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <!-- /.всплывающее меню product-item__link-box -->
+                                </div>
+
+                                <div class="product-item__wrapper-box">
+                                    <div class="product-item__box">
+                                        <div class="star" data-rateyo-rating='3.2'></div>
+                                        <!-- /.star звездный рейтинг -->
+                                        <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                                        <div class="product-item__price">
+                                            <div class="product-item__new-price">$ 34.00 </div>
+                                            <div class="product-item__old-price">$ 27.00 </div>
+                                        </div>
+                                    </div>
+                                    <!-- product-item__box -->
+                                    <div class="product-item__content-box">
+                                        <p class="product-item__text">
+                                            Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et
+                                            dolore magna aliqua.
+                                        </p>
+                                        <button class="product-item__btn ">
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                    <!-- /.product-item__content -->
+                                </div>
+                                <!-- /.product-item__wrapper-box -->
+                                <!-- /.product-item__price -->
+                            </div>
+                            <!-- конец карточки -->
+                            <!-- карточка 05-->
+                            <div class="product-item ">
+                                <div class="product-item__img-box">
+                                    <img class="product-item__images" src="images/product/product-05.png"
+                                        alt="фото товара">
+                                    <div class="product-item__link-box">
+                                        <a class="product-item__link" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#search"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="product-item__link product-item__link-line" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#bag"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="product-item__link" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <!-- /.всплывающее меню product-item__link-box -->
+                                </div>
+                                <div class="product-item__wrapper-box">
+                                    <div class="product-item__box">
+                                        <div class="star" data-rateyo-rating='5'></div>
+                                        <!-- /.star звездный рейтинг -->
+                                        <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                                        <div class="product-item__price">
+                                            <div class="product-item__new-price">$ 34.00 </div>
+                                            <div class="product-item__old-price">$ 27.00 </div>
+                                        </div>
+                                    </div>
+                                    <!-- product-item__box -->
+                                    <div class="product-item__content-box">
+                                        <p class="product-item__text">
+                                            Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et
+                                            dolore magna aliqua.
+                                        </p>
+                                        <button class="product-item__btn ">
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                    <!-- /.product-item__content -->
+                                </div>
+                                <!-- /.product-item__wrapper-box -->
+                                <!-- /.product-item__price -->
+                            </div>
+                            <!-- конец карточки -->
+                            <!-- карточка 06-->
+                            <div class="product-item product-item__sale">
+                                <div class="product-item__img-box">
+                                    <img class="product-item__images" src="images/product/product-06.png"
+                                        alt="фото товара">
+                                    <div class="product-item__link-box">
+                                        <a class="product-item__link" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#search"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="product-item__link product-item__link-line" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#bag"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="product-item__link" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <!-- /.всплывающее меню product-item__link-box -->
+                                </div>
+
+                                <div class="product-item__wrapper-box">
+                                    <div class="product-item__box">
+                                        <div class="star" data-rateyo-rating='1.5'></div>
+                                        <!-- /.star звездный рейтинг -->
+                                        <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                                        <div class="product-item__price">
+                                            <div class="product-item__new-price">$ 34.00 </div>
+                                            <div class="product-item__old-price">$ 27.00 </div>
+                                        </div>
+                                    </div>
+                                    <!-- product-item__box -->
+                                    <div class="product-item__content-box">
+                                        <p class="product-item__text">
+                                            Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et
+                                            dolore magna aliqua.
+                                        </p>
+                                        <button class="product-item__btn ">
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                    <!-- /.product-item__content -->
+                                </div>
+                                <!-- /.product-item__wrapper-box -->
+                                <!-- /.product-item__price -->
+                            </div>
+                            <!-- конец карточки -->
+
+                            <!-- карточка 07-->
+                            <div class="product-item">
+                                <div class="product-item__img-box">
+                                    <img class="product-item__images" src="images/product/product-07.png"
+                                        alt="фото товара">
+                                    <div class="product-item__link-box">
+                                        <a class="product-item__link" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#search"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="product-item__link product-item__link-line" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#bag"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="product-item__link" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <!-- /.всплывающее меню product-item__link-box -->
+                                </div>
+
+                                <div class="product-item__wrapper-box">
+                                    <div class="product-item__box">
+                                        <div class="star" data-rateyo-rating='3'></div>
+                                        <!-- /.star звездный рейтинг -->
+                                        <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                                        <div class="product-item__price">
+                                            <div class="product-item__new-price">$ 34.00 </div>
+                                            <div class="product-item__old-price">$ 27.00 </div>
+                                        </div>
+                                    </div>
+                                    <!-- product-item__box -->
+                                    <div class="product-item__content-box">
+                                        <p class="product-item__text">
+                                            Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et
+                                            dolore magna aliqua.
+                                        </p>
+                                        <button class="product-item__btn ">
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                    <!-- /.product-item__content -->
+                                </div>
+                                <!-- /.product-item__wrapper-box -->
+                                <!-- /.product-item__price -->
+                            </div>
+                            <!-- конец карточки -->
+                            <!-- карточка 08-->
+                            <div class="product-item product-item__sale">
+                                <div class="product-item__img-box">
+                                    <img class="product-item__images" src="images/product/product-08.png"
+                                        alt="фото товара">
+                                    <div class="product-item__link-box">
+                                        <a class="product-item__link" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#search"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="product-item__link product-item__link-line" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#bag"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="product-item__link" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <!-- /.всплывающее меню product-item__link-box -->
+                                </div>
+
+                                <div class="product-item__wrapper-box">
+                                    <div class="product-item__box">
+                                        <div class="star" data-rateyo-rating='3.2'></div>
+                                        <!-- /.star звездный рейтинг -->
+                                        <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                                        <div class="product-item__price">
+                                            <div class="product-item__new-price">$ 34.00 </div>
+                                            <div class="product-item__old-price">$ 27.00 </div>
+                                        </div>
+                                    </div>
+                                    <!-- product-item__box -->
+                                    <div class="product-item__content-box">
+                                        <p class="product-item__text">
+                                            Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et
+                                            dolore magna aliqua.
+                                        </p>
+                                        <button class="product-item__btn ">
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                    <!-- /.product-item__content -->
+                                </div>
+                                <!-- /.product-item__wrapper-box -->
+                                <!-- /.product-item__price -->
+                            </div>
+                            <!-- конец карточки -->
+                            <!-- карточка 09-->
+                            <div class="product-item ">
+                                <div class="product-item__img-box">
+                                    <img class="product-item__images" src="images/product/product-09.png"
+                                        alt="фото товара">
+                                    <div class="product-item__link-box">
+                                        <a class="product-item__link" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#search"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="product-item__link product-item__link-line" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#bag"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="product-item__link" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <!-- /.всплывающее меню product-item__link-box -->
+                                </div>
+                                <div class="product-item__wrapper-box">
+                                    <div class="product-item__box">
+                                        <div class="star" data-rateyo-rating='5'></div>
+                                        <!-- /.star звездный рейтинг -->
+                                        <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                                        <div class="product-item__price">
+                                            <div class="product-item__new-price">$ 34.00 </div>
+                                            <div class="product-item__old-price">$ 27.00 </div>
+                                        </div>
+                                    </div>
+                                    <!-- product-item__box -->
+                                    <div class="product-item__content-box">
+                                        <p class="product-item__text">
+                                            Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et
+                                            dolore magna aliqua.
+                                        </p>
+                                        <button class="product-item__btn ">
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                    <!-- /.product-item__content -->
+                                </div>
+                                <!-- /.product-item__wrapper-box -->
+                                <!-- /.product-item__price -->
+                            </div>
+                            <!-- конец карточки -->
+                            <!-- карточка 10-->
+                            <div class="product-item product-item__sale">
+                                <div class="product-item__img-box">
+                                    <img class="product-item__images" src="images/product/product-10.png"
+                                        alt="фото товара">
+                                    <div class="product-item__link-box">
+                                        <a class="product-item__link" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#search"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="product-item__link product-item__link-line" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#bag"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="product-item__link" href="#">
+                                            <svg class="icon icon-search">
+                                                <use href="images/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <!-- /.всплывающее меню product-item__link-box -->
+                                </div>
+
+                                <div class="product-item__wrapper-box">
+                                    <div class="product-item__box">
+                                        <div class="star" data-rateyo-rating='1.5'></div>
+                                        <!-- /.star звездный рейтинг -->
+                                        <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                                        <div class="product-item__price">
+                                            <div class="product-item__new-price">$ 34.00 </div>
+                                            <div class="product-item__old-price">$ 27.00 </div>
+                                        </div>
+                                    </div>
+                                    <!-- product-item__box -->
+                                    <div class="product-item__content-box">
+                                        <p class="product-item__text">
+                                            Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et
+                                            dolore magna aliqua.
+                                        </p>
+                                        <button class="product-item__btn ">
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                    <!-- /.product-item__content -->
+                                </div>
+                                <!-- /.product-item__wrapper-box -->
+                                <!-- /.product-item__price -->
+                            </div>
+                            <!-- конец карточки -->
+                        </div>
+                        <!-- /.shop-content__inner -->
+                        <div class="pagination">
+
+
+                            <a class="pagination__prev pagination__arrows" href="#">
+                                <svg class="icon icon-angle_left">
+                                    <use href="images/icons/icons.svg#angle_left"></use>
+                                </svg>
+                                PREVIOUS
+                            </a>
+
+
+                            <ul class="pagination__list">
+                                <li class="pagination__item"><a class=" pagination__link" href="#">1</a></li>
+                                <li class="pagination__item"><a class=" pagination__link" href="#">2</a></li>
+                                <li class="pagination__item"><a class=" pagination__link pagination__link--active "
+                                        href="#">3</a></li>
+                                <li class="pagination__item"><span>...</span>
+                                </li>
+                                <li class="pagination__item"><a class=" pagination__link" href="#">10</a></li>
+                            </ul>
+
+                            <a class="pagination__next pagination__arrows" href="#">
+                                NEXT
+                                <svg class="icon icon-angle_right">
+                                    <use href="images/icons/icons.svg#angle_right"></use>
+                                </svg>
+                            </a>
+
+
+                        </div>
+
+                        <!-- /.pagination -->
+
+                    </div>
+
+                    <!-- /.shop__content -->
+                </div>
+            </div>
+        </section>
+        <!-- /.shop -->
+
+    </main>
+    <!-- /.main -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-top__item footer-top__contacts">
+                    <a class="logo footer-logo" href="#">
+                        <img class="logo__img" src="images/icons/logo.svg" alt="логотип">
+                    </a>
+                    <!-- /. logo -->
+                    <a class="footer-top__adress" href="#">
+                        No. 342 - London Oxford Street,
+                        012 United States
+                    </a>
+                    <a class="footer-top__email" href="mailto:Youremail@gmail.com">Youremail@gmail.com</a>
+                    <a class="footer-top__phone" href="tel:+02838388393">+0283 838 8393</a>
+                    <a class="footer-top__adress" href="#"></a>
+                    <a class="footer-top__adress" href="#"></a>
+                    <ul class="footer-top__social-list">
+                        <li class="footer-top__social-item">
+                            <a class="footer-top__sicial-link" href="#">
+                                <svg class="icon icon-facebook">
+                                    <use href="images/icons/icons.svg#facebook"></use>
+                                </svg>
+
+                            </a>
+                        </li>
+                        <li class="footer-top__social-item">
+                            <svg class="icon icon-twitter">
+                                <use href="images/icons/icons.svg#twitter"></use>
+                            </svg>
+                        </li>
+                        <li class="footer-top__social-item">
+                            <a class="footer-top__sicial-link" href="#">
+                                <svg class="icon icon-linkedin">
+                                    <use href="images/icons/icons.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-top__social-item">
+                            <a class="footer-top__sicial-link" href="#">
+                                <svg class="icon icon-google">
+                                    <use href="images/icons/icons.svg#google"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-top__social-item">
+                            <a class="footer-top__sicial-link" href="#">
+                                <svg class="icon icon-pinterest">
+                                    <use href="images/icons/icons.svg#pinterest"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top__item footer-top__nav">
+                    <h6 class="footer-top__title">Useful Links</h6>
+                    <ul class="footer-top__list">
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">About Us</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Terms & Conditions</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Contact Us</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Help & Support</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top__item footer-top__nav">
+                    <h6 class="footer-top__title">My Account</h6>
+                    <ul class="footer-top__list">
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">My Account</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">My Cart</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">My WIshlist</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Registration</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Check Out</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top__item footer-top__item-form">
+                    <h6 class="footer-top__title">Subscribe Our Newsletter</h6>
+                    <p class="footer-top__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna
+                        aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                    <form action="#" class="footer-top__form">
+                        <input type="text" class="footer-top__form-input" placeholder="Your email address">
+                        <button class="footer-top__form-btn" type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+            <!-- /.footer-top -->
+            <div class="footer-bottom">
+                <p class="footer-bottom__copy">© 2019 CodeAstrology. All Rights Reserved.</p>
+                <div class="footer-bottom__accept">
+                    We Accept
+                    <svg class="icon icon-master">
+                        <use href="images/icons/icons.svg#master"></use>
+                    </svg>
+                    <svg class="icon icon-visa ">
+                        <use href="images/icons/icons.svg#visa"></use>
+                    </svg>
+                    <svg class="icon icon-paypal ">
+                        <use href="images/icons/icons.svg#paypal"></use>
+                    </svg>
+                </div>
+            </div>
+            <!-- /.footer-bottom -->
+        </div>
+    </footer>
+    <!-- /.footer -->
+
+
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
+
+
+<!-- svg -->
+
+<!-- <svg class="icon icon-user">
+    <use href="images/icons/icons.svg#user"></use>
+</svg> -->

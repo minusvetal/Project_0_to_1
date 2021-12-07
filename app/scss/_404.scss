@@ -1,0 +1,39 @@
+.page-404 {
+	padding: 120px 0;
+	// .page-404__inner
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__item {
+		max-width: 570px;
+	}
+
+	// .page-404__title
+
+	&__title {
+		@extend %roboto-700;
+		font-size: 48px;
+		line-height: 26px;
+		font-weight: 700;
+		color: #28384f;
+		margin-bottom: 20px;
+	}
+
+	// .page-404__text
+
+	&__text {
+		max-width: 460px;
+		width: 100%;
+		color: $default;
+		margin-bottom: 60px;
+	}
+}
+
+.icon-404 {
+	width: 600px;
+	height: 550px;
+}

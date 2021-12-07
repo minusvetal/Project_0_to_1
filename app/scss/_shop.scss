@@ -1,0 +1,102 @@
+.shop {
+	padding: 120px 0;
+	// .shop__inner
+
+	&__inner {
+		display: flex;
+	}
+
+	// .shop__filters
+
+	&__filters {
+		width: 370px;
+		margin-right: 30px;
+	}
+}
+
+.shop-content {
+	width: 100%;
+	&__filter {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border: 1px solid #ebebeb;
+		padding: 20px 25px 20px 30px;
+		margin-bottom: 40px;
+		&-buttons {
+			display: flex;
+			align-items: center;
+		}
+		&-btn {
+			line-height: 0;
+			margin-left: 15px;
+			background-color: transparent;
+			&--active {
+				svg {
+					width: 30px;
+					height: 25px;
+					fill: $accent;
+				}
+			}
+		}
+	}
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		border-bottom: 1px solid $gray;
+		.product-item {
+			margin-bottom: 40px;
+		}
+	}
+}
+
+.icon-list {
+	width: 20px;
+	height: 15px;
+}
+
+// меняем стили селектора
+
+.jq-selectbox__select {
+	position: relative;
+	height: 32px;
+	margin-left: 30px;
+	padding: 0 30px 0 0;
+	border: none;
+	background: transparent;
+	box-shadow: none;
+	@extend %quicksand-500;
+	color: $default;
+	text-shadow: none;
+	cursor: pointer;
+	&:hover {
+		background: transparent;
+	}
+	&-text {
+		width: 100px;
+	}
+}
+
+.jq-selectbox__dropdown {
+	margin-left: 30px;
+	width: 135px;
+}
+
+.jq-selectbox__trigger {
+	border: none;
+}
+
+.jq-selectbox__trigger-arrow {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	width: 10px;
+	height: 5px;
+	border: none;
+	background-image: url("../images/icons/arrow-down.svg");
+}
+
+// пагинация
+
+@import "pagination";
